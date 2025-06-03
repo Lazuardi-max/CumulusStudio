@@ -78,9 +78,9 @@
     }
 
     .link-btn {
-      display: inherit;
-      width: 100%;
-      max-width: 400px;
+      display: inline-block;
+      width: 90%;
+      max-width: 500px;
       margin: 10px auto;
       padding: 12px 20px;
       background: #3694d3;
