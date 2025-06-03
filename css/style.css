@@ -89,8 +89,8 @@
       font-size: 1rem;
       text-decoration: none;
       transition: background 0.3s ease;
-      align-items: center;
-      text-align: center;
+      align-items: left;
+      text-align: left;
     }
 
     .link-btn:hover {
