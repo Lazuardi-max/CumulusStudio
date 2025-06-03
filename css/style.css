@@ -89,6 +89,16 @@ body.dark-mode .profile-img {
       background: #2cc0e6;
     }
 
+    @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+        .link-btn {
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
