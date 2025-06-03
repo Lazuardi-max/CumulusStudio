@@ -48,14 +48,14 @@
     }
 
     .container {
-    width: 100%;
+      width: 100%;
       max-width: 500px;
       background: #fff;
       border-radius: 16px;
       padding: 30px 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     }
 
     .profile-img {
@@ -64,14 +64,14 @@
       height: auto;
       border-radius: 50%;
       object-fit: cover;
-        margin: 0 auto 20px auto;
+      margin: 0 auto 20px auto;
       margin-bottom: 15px;
       align-items: center;
-        display: block;
+      display: block;
     }
 
     h1, h2, p{
-    margin: 10px 0;
+      margin: 10px 0;
       font-size: 1.5rem;
       margin-bottom: 20px;
     }
@@ -79,7 +79,7 @@
     .link-btn {
       display: block;
       width: 100%;
-        max-width: 400px;
+      max-width: 400px;
       margin: 10px auto;
       padding: 12px 20px;
       background: #3694d3;
@@ -89,20 +89,21 @@
       font-size: 1rem;
       text-decoration: none;
       transition: background 0.3s ease;
+      align-items: center;
+      text-align: center;
     }
 
     .link-btn:hover {
       background: #2cc0e6;
     }
 
-    ul {
-        list-style: none;
-        padding-left: 0;
+    .link-btn:active {
+      background: #1a8fbf;
     }
 
-    ul li::before {
-        content: ". ";
-        color: #000;
+    .link-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(54, 148, 211, 0.5);
     }
 
     @media (max-width: 600px) {
