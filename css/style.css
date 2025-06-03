@@ -78,8 +78,8 @@
     }
 
     .link-btn {
-      display: inline-block;
-      width: fit-content;
+      display: inherit;
+      width: 100%;
       max-width: 400px;
       margin: 10px auto;
       padding: 12px 20px;
