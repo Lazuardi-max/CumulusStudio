@@ -49,7 +49,7 @@
     }
 
     .container {
-      display: block;
+      display: inline-block;
       width: 90%;
       max-width: 500px;
       background: #fff;
