@@ -24,8 +24,8 @@
     }
 
     body.dark-mode .container {
-      background-color: #535658;
-      color: var(--text-dark);
+      background-color: #131516;
+      color: white;
     }
 
     body.dark-mode .profile-img {
