@@ -38,6 +38,16 @@
       filter: none;
     }
 
+    body.dark-mode .produk-wrapper {
+      background-color: var(--container-dark);
+    }
+
+    body.dark-mode .produk {
+      background-color: #0e1d2c;
+      color: var(--text-dark);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
     body.dark-mode .link-btn {
       background-color: var(--link-btn-bg-dark);
       color: var(--text-dark);
@@ -119,7 +129,7 @@
 
     .produk {
       flex: 1 1 45%;
-      background: #ffffff;
+      background: #6dbfe6;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
