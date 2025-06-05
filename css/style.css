@@ -1,5 +1,5 @@
     :root {
-      --bg-light: #ffffff;
+      --bg-light: #97ece8;
       --text-light: #000000;
       --bg-dark: #121212;
       --text-dark: #ffffff;
@@ -11,7 +11,6 @@
       transition: background-color 0.3s ease, color 0.3s ease;
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: #97ece8;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,6 +32,20 @@
       filter: none;
     }
 
+    body.dark-mode .link-btn {
+      background-color: #3a88b4;
+      color: white;
+    }
+
+    body.dark-mode .link-btn:hover {
+      background-color: #2277a3;
+    }
+
+    body.dark-mode .welcome h1,
+    body.dark-mode .welcome p {
+      color: var(--text-dark);
+    }
+
      .toggle-btn {
       position: fixed;
       top: 20px;
@@ -51,7 +64,7 @@
     .container {
       display: inline-block;
       width: 90%;
-      max-width: 500px;
+      max-width: 600px;
       background: #7fe7f5;
       border-radius: 16px;
       padding: 30px 20px;
@@ -103,7 +116,7 @@
       width: 90%;
       max-width: 500px;
       margin: 10px auto;
-      padding: 12px 20px;
+      padding: 12rem 20rem;
       background: #50adeb;
       color: white;
       border: none;
@@ -111,7 +124,6 @@
       font-size: 1rem;
       text-decoration: none;
       transition: background 0.3s ease;
-      align-items: left;
       text-align: left;
     }
 
