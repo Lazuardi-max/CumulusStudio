@@ -5,6 +5,15 @@
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     }
 
+    function() {
+      const userTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      
+      if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
+        document.body.classList.add('dark-mode');
+    }
+
     if(document.body.classList.contains('dark-mode')) {
       localStorage.setItem('mode', 'dark');
     } else {

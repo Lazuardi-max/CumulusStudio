@@ -3,6 +3,11 @@
       --text-light: #000000;
       --bg-dark: #121212;
       --text-dark: #ffffff;
+      --link-btn-bg-light: #50adeb;
+      --link-btn-hover-light: #2cc0e6;
+      --link-btn-active-light: #309ac4;
+      --link-btn-bg-dark: #3a88b4;
+      --link-btn-hover-dark: #2277a3;
     }
 
    body {
@@ -33,12 +38,12 @@
     }
 
     body.dark-mode .link-btn {
-      background-color: #3a88b4;
-      color: white;
+      background-color: var(--link-btn-bg-dark);
+      color: var(--text-dark);
     }
 
     body.dark-mode .link-btn:hover {
-      background-color: #2277a3;
+      background-color: var(--link-btn-hover-dark);
     }
 
     body.dark-mode .welcome h1,
@@ -55,10 +60,10 @@
       background-color: #535c54;
       color: white;
       font-size: 14px;
-      align-items: left;
       border-radius: 8px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
     }
 
     .container {
@@ -80,8 +85,6 @@
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 20px auto;
-      margin-bottom: 15px;
-      text-align: center;
       display: block;
     }
 
@@ -107,9 +110,13 @@
 
     h1, h2, p{
       margin: 10px 0;
-      font-size: 1.5rem;
-      margin-bottom: 20px;
     }
+    h1 {
+      font-size: 2rem;}
+    h2 {
+      font-size: 1.8rem;}
+    p {
+      font-size: 1.1rem;}
 
     .link-btn {
       display: block;
@@ -117,22 +124,22 @@
       max-width: 500px;
       margin: 10px auto;
       padding: 12px 20px;
-      background-image: #50adeb;
+      background: var(--link-btn-bg-light);
       color: white;
       border: none;
       border-radius: 10px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       text-decoration: none;
       transition: background 0.3s ease;
       text-align: left;
     }
 
     .link-btn:hover {
-      background: #2cc0e6;
+      background: var(--link-btn-hover-light);
     }
 
     .link-btn:active {
-      background: #309ac4;
+      background: var(--link-btn-active-light);
     }
 
     .link-btn:focus {
@@ -140,25 +147,69 @@
       box-shadow: 0 0 0 3px rgba(98, 170, 218, 0.5);
     }
 
-    @media (max-width: 600px) {
-        .container {
-          padding: 50px 40px;
-          width: 100%;
+    @media (max-width: 768px) {
+        body {
+          padding: 10px;
         }
-        .link-btn {
-          width: auto;
-          max-width: 90%;
-          padding: 10px 16px;
-          font-size: 1rem;
+        .container {
+          padding: 20px 15px;
+          width: 95%;
+        }
+        .profile-img {
+          width: 80%;
+          max-width: 250px;
+        }
+        .welcome {
+          padding: 20px 10px;
         }
         .welcome h1 {
-          font-size: 2.8rem;
+          font-size: 1.8rem;
         }
         .welcome p {
-          font-size: 1.25rem;
+          font-size: 1rem;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+
+        .link-btn {
+          width: 90%;
+          max-width: none;
+          padding: 12px 15px;
+          font-size: 0.95rem;
         }
     }
 
+    @media (max-width: 480px) {
+      .container {
+          padding: 15px 10px;
+        }
+        .welcome h1 {
+          font-size: 1.6rem;
+        }
+        .welcome p {
+          font-size: 0.9rem;
+        }
+        h1 {
+          font-size: 1.3rem;
+        }
+        h2 {
+          font-size: 1.1rem;
+        }
+        p {
+          font-size: 0.85rem;
+        }
+        .link-btn {
+          width: 95%;
+          padding: 10px 12px;
+          font-size: 0.9rem;
+        }
     footer {
       text-align: center;
       margin-top: 40px;
