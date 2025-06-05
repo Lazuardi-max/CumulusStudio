@@ -104,7 +104,7 @@
       max-width: 500px;
       margin: 10px auto;
       padding: 12px 20px;
-      background: #3694d3;
+      background: #50adeb;
       color: white;
       border: none;
       border-radius: 10px;
@@ -120,12 +120,12 @@
     }
 
     .link-btn:active {
-      background: #1a8fbf;
+      background: #309ac4;
     }
 
     .link-btn:focus {
       outline: none;
-      box-shadow: 0 0 0 3px rgba(54, 148, 211, 0.5);
+      box-shadow: 0 0 0 3px rgba(98, 170, 218, 0.5);
     }
 
     @media (max-width: 600px) {
