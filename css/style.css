@@ -10,6 +10,8 @@
       --link-btn-hover-dark: #2277a3;
       --container-light: #7fe7f5;
       --container-dark: #131516;
+      --produk-dark: #0e1d2c;
+      --produk-light: #6dbfe6;
     }
 
    body {
@@ -39,13 +41,13 @@
     }
 
     body.dark-mode .produk-wrapper {
-      background-color: var(--container-dark);
+      background-color: var(--produk-dark);
+      color: var(--text-dark);
     }
 
     body.dark-mode .produk {
-      background-color: #0e1d2c;
+      background-color: var(--produk-dark);
       color: var(--text-dark);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     body.dark-mode .link-btn {
