@@ -5,14 +5,16 @@
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     }
 
-    function() {
-      const userTheme = localStorage.getItem('theme');
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
       const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      }
-      
-      if (userTheme === 'dark' || (!userTheme && systemPrefersDark)) {
+
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         document.body.classList.add('dark-mode');
-    }
+    } else {
+        document.body.classList.remove('dark-mode');
+      }
+    });
 
     if(document.body.classList.contains('dark-mode')) {
       localStorage.setItem('mode', 'dark');
